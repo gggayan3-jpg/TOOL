@@ -63,6 +63,8 @@
             gap: 10px;
             font-size: 1.8rem;
             font-weight: 700;
+            text-decoration: none;
+            color: white;
         }
 
         .logo i {
@@ -265,11 +267,14 @@
             text-align: center;
             box-shadow: var(--shadow);
             transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
         }
 
         .category-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            color: inherit;
         }
 
         .category-card i {
@@ -387,6 +392,8 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             transition: var(--transition);
+            color: white;
+            text-decoration: none;
         }
 
         .social-links a:hover {
@@ -494,10 +501,10 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
+                <a href="#" class="logo">
                     <i class="fas fa-tools"></i>
                     <span>ToolKit</span>
-                </div>
+                </a>
                 <button class="mobile-menu-btn" id="menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -533,7 +540,7 @@
             <h2>Popular Tools</h2>
         </div>
         <div class="tools-grid">
-            <div class="tool-card">
+            <a href="image-compressor.html" class="tool-card">
                 <div class="tool-card-header">
                     <i class="fas fa-compress-arrows-alt"></i>
                     <h3>Image Compressor</h3>
@@ -542,11 +549,11 @@
                     <p>Reduce image file size without losing quality. Support for JPG, PNG, and WebP formats.</p>
                 </div>
                 <div class="tool-card-footer">
-                    <a href="#" class="btn">Use Tool</a>
+                    <span class="btn">Use Tool</span>
                 </div>
-            </div>
+            </a>
             
-            <div class="tool-card">
+            <a href="pdf-compressor.html" class="tool-card">
                 <div class="tool-card-header">
                     <i class="fas fa-file-pdf"></i>
                     <h3>PDF Compressor</h3>
@@ -555,11 +562,11 @@
                     <p>Compress PDF files to reduce their size while maintaining quality.</p>
                 </div>
                 <div class="tool-card-footer">
-                    <a href="#" class="btn">Use Tool</a>
+                    <span class="btn">Use Tool</span>
                 </div>
-            </div>
+            </a>
             
-            <div class="tool-card">
+            <a href="image-converter.html" class="tool-card">
                 <div class="tool-card-header">
                     <i class="fas fa-exchange-alt"></i>
                     <h3>Image Converter</h3>
@@ -568,11 +575,11 @@
                     <p>Convert between different image formats: JPG, PNG, WebP, GIF, and more.</p>
                 </div>
                 <div class="tool-card-footer">
-                    <a href="#" class="btn">Use Tool</a>
+                    <span class="btn">Use Tool</span>
                 </div>
-            </div>
+            </a>
             
-            <div class="tool-card">
+            <a href="pdf-to-image.html" class="tool-card">
                 <div class="tool-card-header">
                     <i class="fas fa-file-image"></i>
                     <h3>PDF to Image</h3>
@@ -581,11 +588,11 @@
                     <p>Convert PDF pages to high-quality JPG, PNG or WebP images.</p>
                 </div>
                 <div class="tool-card-footer">
-                    <a href="#" class="btn">Use Tool</a>
+                    <span class="btn">Use Tool</span>
                 </div>
-            </div>
+            </a>
             
-            <div class="tool-card">
+            <a href="image-resizer.html" class="tool-card">
                 <div class="tool-card-header">
                     <i class="fas fa-crop-alt"></i>
                     <h3>Image Resizer</h3>
@@ -594,11 +601,11 @@
                     <p>Resize your images without losing quality. Custom dimensions or presets available.</p>
                 </div>
                 <div class="tool-card-footer">
-                    <a href="#" class="btn">Use Tool</a>
+                    <span class="btn">Use Tool</span>
                 </div>
-            </div>
+            </a>
             
-            <div class="tool-card">
+            <a href="pdf-protector.html" class="tool-card">
                 <div class="tool-card-header">
                     <i class="fas fa-lock"></i>
                     <h3>PDF Protector</h3>
@@ -607,9 +614,9 @@
                     <p>Add password protection to your PDF files to keep them secure.</p>
                 </div>
                 <div class="tool-card-footer">
-                    <a href="#" class="btn">Use Tool</a>
+                    <span class="btn">Use Tool</span>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -619,29 +626,29 @@
             <h2>Tools Categories</h2>
         </div>
         <div class="categories">
-            <div class="category-card">
+            <a href="compression-tools.html" class="category-card">
                 <i class="fas fa-compress-alt"></i>
                 <h3>Compression Tools</h3>
                 <p>Reduce file size of images and PDFs</p>
-            </div>
+            </a>
             
-            <div class="category-card">
+            <a href="conversion-tools.html" class="category-card">
                 <i class="fas fa-exchange-alt"></i>
                 <h3>Conversion Tools</h3>
                 <p>Convert between different formats</p>
-            </div>
+            </a>
             
-            <div class="category-card">
+            <a href="editing-tools.html" class="category-card">
                 <i class="fas fa-edit"></i>
                 <h3>Editing Tools</h3>
                 <p>Edit and enhance your files</p>
-            </div>
+            </a>
             
-            <div class="category-card">
+            <a href="security-tools.html" class="category-card">
                 <i class="fas fa-lock"></i>
                 <h3>Security Tools</h3>
                 <p>Protect your sensitive files</p>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -709,33 +716,33 @@
                 <div class="footer-column">
                     <h3>Image Tools</h3>
                     <ul>
-                        <li><a href="#">Image Compressor</a></li>
-                        <li><a href="#">Image Converter</a></li>
-                        <li><a href="#">Image Resizer</a></li>
-                        <li><a href="#">Watermark Remover</a></li>
-                        <li><a href="#">Background Remover</a></li>
+                        <li><a href="image-compressor.html">Image Compressor</a></li>
+                        <li><a href="image-converter.html">Image Converter</a></li>
+                        <li><a href="image-resizer.html">Image Resizer</a></li>
+                        <li><a href="watermark-remover.html">Watermark Remover</a></li>
+                        <li><a href="background-remover.html">Background Remover</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h3>PDF Tools</h3>
                     <ul>
-                        <li><a href="#">PDF Compressor</a></li>
-                        <li><a href="#">PDF to Word</a></li>
-                        <li><a href="#">PDF to Image</a></li>
-                        <li><a href="#">PDF Merger</a></li>
-                        <li><a href="#">PDF Protector</a></li>
+                        <li><a href="pdf-compressor.html">PDF Compressor</a></li>
+                        <li><a href="pdf-to-word.html">PDF to Word</a></li>
+                        <li><a href="pdf-to-image.html">PDF to Image</a></li>
+                        <li><a href="pdf-merger.html">PDF Merger</a></li>
+                        <li><a href="pdf-protector.html">PDF Protector</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
